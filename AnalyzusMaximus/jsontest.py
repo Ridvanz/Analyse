@@ -2,7 +2,7 @@ import json
 import random
 #class Catalog:
 
-for _ in range 
+# for _ in range 
 
 class Book:
     def __init__(self,author,title,year,ISBN):
@@ -18,6 +18,8 @@ def getCatalog(filePathAndName):
 
 myCatalog = getCatalog('./booksset1.json')
 
+print(myCatalog)
+len(myCatalog)
 thisAuthor = myCatalog[1].get("author")
 thisTitle = myCatalog[1].get("title")
 thisYear = myCatalog[1].get("year")
@@ -28,5 +30,5 @@ randomISBNmaker = random.choice(range(10000,99999))
 print(randomISBNmaker)
 print(book1.title)
 
-for x in len(myCatalog):
-    books[x] = Book()
+# for x in len(myCatalog):
+#     books[x] = Book()
